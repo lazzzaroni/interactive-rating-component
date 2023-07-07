@@ -49,9 +49,10 @@ export default function Form(props: PropsType) {
                 className={cn(
                   "flex h-10 w-10 content-center items-center justify-center rounded-full bg-neutral-dark-blue pt-1 text-sm text-neutral-light-grey",
                   "sm:h-12 sm:w-12 sm:text-base",
-                  "hover:bg-primary-orange hover:text-neutral-white",
+                  "hover:bg-primary-orange hover:text-neutral-white active:bg-neutral-light-grey",
                   {
-                    "bg-neutral-light-grey text-neutral-white": value == vote,
+                    "bg-neutral-light-grey text-neutral-white hover:bg-neutral-medium-grey":
+                      value == vote,
                   }
                 )}
                 onClick={() => setVote(value)}
