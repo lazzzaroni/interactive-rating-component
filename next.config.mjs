@@ -6,7 +6,7 @@ await import("./src/env.mjs");
 
 /** @type {import("next").NextConfig} */
 const config = {
-  // basePath: "/interactive-rating-component",
+  basePath: "/interactive-rating-component",
   reactStrictMode: true,
 
   /**
